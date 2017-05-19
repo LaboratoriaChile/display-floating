@@ -28,3 +28,68 @@ h1{
 #mostrar{
 	color: whitesmoke;
 }
+
+/**********************************/
+/***** ACA COMIENZA FLOATING ******/
+/**********************************/
+
+.big-box {
+	padding: 20px; 
+	background-color: #3D204A;
+	overflow: auto;
+}
+.big-box .ta{
+	box-sizing: border-box;
+	width: 200px;
+	border: 2px solid indigo;
+	background-color: #7B5A85;
+	color: whitesmoke;
+	padding: 20px;
+	float: left;
+}
+
+.big-box .ta:last-child{
+	background-color: #6C4EB4;
+	clear: right;
+}
+
+.amala .primero{
+	background-color: blue;
+	width: 50%;
+	float: left;
+}
+
+#p-overflow{
+	width: 100px;
+	height: 100px;
+	background-color: #3D1D1D;
+	color: #CE0688;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding: 50px;
+}
+
+.bigger-box{
+	background-color: #6A0D0D;
+	padding: 20px;
+	width: 800px;
+}
+
+.bigger-box:before, .bigger-box:after{
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+.bigger-box div{
+	box-sizing: border-box;
+	width: 200px;
+	background-color: #BF5555;
+	float: right;
+	padding: 20px;
+	border: 10px solid whitesmoke;
+	color: whitesmoke;
+	text-align: center;
+}
