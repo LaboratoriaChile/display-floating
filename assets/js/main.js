@@ -1,1 +1,17 @@
-alert("Hola mundo");
+
+(function displayNone(){
+	/*GetElementsByClassName me retorna
+	una coleccion de HTML elementos
+	en esta coleccion no se puede hacer foreach por lo que la transformo a un arreglo con
+	Array.from*/
+	var cajas = Array.from(document.getElementsByClassName("caja"));
+
+
+	console.log(cajas);
+	cajas.forEach(function(e){
+		//Poner sombrero a e;
+		e.addEventListener("click", function(){
+			this.classList.toggle("no");
+		});
+	});
+})()
