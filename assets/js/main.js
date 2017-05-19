@@ -14,4 +14,15 @@
 			this.classList.toggle("no");
 		});
 	});
+
+	var boton =	document.getElementById("mostrar");
+	boton.addEventListener("click", function(el){
+		//Previene el comportamiento por defecto
+		//Como este es un enlace lo que evita es que me haga elñ salto de pagina
+		el.preventDefault();
+
+		cajas.forEach(function(e){
+			e.classList.remove("no");
+		})
+	})
 })()
